@@ -9,6 +9,7 @@ a = 10 / 4 * 2
 b = 13 % 4 // 2
 print((a + b) ** 3)
 ```
+---
 ```python
 v = int(input())
 s = "Вася любит {0}"
@@ -19,10 +20,12 @@ elif v or True:
 else:
     print(s.format("гулять"))
 ```
+---
 ```python
 for i in range(1,10,2):
     print("*" * i)
 ```
+---
 ```python
 s = 0
 a = 0
@@ -32,17 +35,20 @@ while b < 13:
     a, b = b, a + b
 print(s)
 ```
+---
 ```python
 animals = ['cow', 'camal', 'pig', 'frog', 'horse', 'goat']
 for animal in animals:
     if len(animal) > 4:
         print(animal[::-1])
 ```
+---
 ```python
 sentence = "Мама мыла раму"
 sentence = sentence.lower().replace("м", "п")
 print(sentence[:4] + sentence[10:])
 ```
+---
 ```python
 d = {}
 list = [1, 2, 3, 3, -45, 23, 6, 23, 3]
@@ -53,6 +59,7 @@ for elem in list:
         d[elem] = 1
 print(d[3])
 ```
+---
 ```python
 matr = [
     [1, 2, 3],
