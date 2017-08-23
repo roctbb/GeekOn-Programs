@@ -37,7 +37,7 @@ print(s)
 ```
 ---
 ```python
-animals = ['cow', 'camal', 'pig', 'frog', 'horse', 'goat']
+animals = ['cow', 'camel', 'pig', 'frog', 'horse', 'goat']
 for animal in animals:
     if len(animal) > 4:
         print(animal[::-1])
