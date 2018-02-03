@@ -8,5 +8,5 @@
 
 По данным ниже определите, какую часть каникул Петя провел на свежем воздухе?
 
-![task1](images/task1.jpg)
+![task1](https://github.com/roctbb/GeekOn-Programs/raw/master/Start%20Python/images/task1.jpg)
 
