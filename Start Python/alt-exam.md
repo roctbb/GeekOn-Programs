@@ -47,7 +47,7 @@ sentence = sentence.replace("the", "de").upper()
 print(sentence[:18] + sentence[-1])
 ```
 ---
-На диске в папке с программой лежит файл text.txt с следующий текстом:
+На диске в папке с программой лежит файл text.txt с следующим текстом:
 
 ```
 python 1 - сб и вс, 18:00
