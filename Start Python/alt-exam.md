@@ -1,6 +1,6 @@
-## Промежуточный зачет по прикладному программированию на Python
+## Вступительные испытания на второй семестр обучения 
 
-### Часть 1: Программирование на Python
+### Программирование на Python
 
 Что будет выведено на экран в следующих программах:
 
@@ -11,19 +11,17 @@ print((a + b) ** 3)
 ```
 ---
 ```python
-v = int(input())
-s = "Вася любит {0}"
-if v and not True:
-    print(s.format("кодить"))
-elif v or True:
-    print(s.format("спать"))
-else:
-    print(s.format("гулять"))
+def strangeMultiply(a, b):
+    result = a * (b + 2)
+    return result
+
+c = strangeMultiply(2, strangeMultiply(3, 4))
+print(c)
 ```
 ---
 ```python
-for i in range(1,10,2):
-    print("*" * i)
+for i in range(0, 5):
+    print(" " * (4 - i) + "#" * (2 * i + 1))
 ```
 ---
 ```python
@@ -39,41 +37,46 @@ print(s)
 ```python
 animals = ['cow', 'camel', 'pig', 'frog', 'horse', 'goat']
 for animal in animals:
-    if len(animal) > 4:
-        print(animal[::-1])
+    if len(animal) > 3:
+        print(animal[::2])
 ```
 ---
 ```python
-sentence = "Мама мыла раму"
-sentence = sentence.lower().replace("м", "п")
-print(sentence[:4] + sentence[10:])
+sentence = "Do you know the way to the library?"
+sentence = sentence.replace("the", "de").upper()
+print(sentence[:18] + sentence[-1])
 ```
 ---
+На диске в папке с программой лежит файл text.txt с следующий текстом:
+
+```
+python 1 - сб и вс, 18:00
+python 2 - сб, 14:00
+С++ - вс, 14:00
+Frontend&Backend - сб и вс, 14:00
+```
+
 ```python
-d = {}
-list = [1, 2, 3, 3, -45, 23, 6, 23, 3]
-for elem in list:
-    if elem in d.keys():
-        d[elem] += 1
+with open('text.txt', 'r') as file:
+    text = file.read()
+words = text.split(' ')
+counter = {}
+for word in words:
+    if word not in counter:
+        counter[word] = 1
     else:
-        d[elem] = 1
-print(d[3])
+        counter[word] = counter[word] + 1
+print(counter['python'])
 ```
 ---
 ```python
 matr = [
     [1, 2, 3],
-    [1, 5, 2],
+    [1, 0, 2],
     [3, 2, 1]
 ]
-p = 1
+p = 0
 for l in matr:
-    p *= sum(l)
+    p += sum(l)
 print(p)
 ```
-### Часть 2: Теория
-
-1. Что такое условный оператор? Как он записывается на блок-схеме и в коде? Объединение условий с условной операторе.
-3. Чем цикл while отличается от for? Зачем нужна команда break?
-1. Что такое список? Чем он отличается от словаря? Как добавить новый элемент в список? В словарь?
-
