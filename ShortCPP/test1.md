@@ -47,3 +47,54 @@ int main() {
     return 0;
 }
 ```
+
+```cpp
+#include <iostream>
+using namespace std;
+const int N=10;
+int func(int a)
+{
+   if (a%3==0)
+       return 1;
+   return a*func(a+2);
+}
+int main() {
+   cout<<func(2);
+   return 0;
+}
+```
+
+```cpp
+#include <iostream>
+using namespace std;
+const int N=10;
+int func(int a)
+{
+   if (a%3==0)
+       return 1;
+   return a*func(a+2);
+}
+int main() {
+   cout<<func(2);
+   return 0;
+}
+```
+
+```cpp
+#include <iostream>
+#include <cstring>
+using namespace std;
+void step(char * str)
+{
+   for (int i=0; i<strlen(str); i++)
+   {
+       str[i] = str[i]+1;
+   }
+}
+int main() {
+   char a[] = "abba";
+   step(a);
+   cout<<a;
+   return 0;
+}
+```
