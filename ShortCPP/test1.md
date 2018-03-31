@@ -98,3 +98,27 @@ int main() {
    return 0;
 }
 ```
+
+Найдите и исправьте все ошибки:
+
+```cpp
+
+#include <iostream>
+
+using namespace std;
+int main() {
+   ifstream fin("D:\file.txt");
+   short str[255];
+   while(fin>>str) {
+       if (strcmp(str, "Вупсень"))
+       {
+           cout<<"Пупсень"<<" ";
+       }
+       else
+       {
+           cout<<str<<" ";
+       }
+   }
+
+}
+```
