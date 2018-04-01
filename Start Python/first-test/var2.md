@@ -70,6 +70,13 @@ l2 = l
 l2[0] = 6
 print(l)
 ```
+---
+```python
+a = [1, 2, 3]
+for i in a:
+    i += 2
+print(a)
+```
 ### Часть 2: Практика
 
 #### Flappy Bird
