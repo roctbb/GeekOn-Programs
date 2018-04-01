@@ -44,6 +44,8 @@ for animal in animals:
     if len(animal) > 4:
         print(animal[::-1])
 ```
+####
+
 ---
 ```python
 sentence = "Мама мыла раму"
