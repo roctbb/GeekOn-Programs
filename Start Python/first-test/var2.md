@@ -45,6 +45,9 @@ for animal in animals:
         print(animal[::-1])
 ```
 ---
+
+####
+
 ```python
 sentence = "Мама мыла раму"
 sentence = sentence.lower().replace("м", "п")
