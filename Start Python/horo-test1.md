@@ -36,3 +36,31 @@ else:
   print("Поло")
 ```
 ---
+С какой вероятность программа выведет слово *джекпот*?:
+```python
+import random
+if random.randint(1,100) > 30:
+  print("джекпот")
+else:
+  print("кот в мешке")
+```
+---
+```python
+def my_func(a):
+  print('*' * a)
+  
+my_func(1)
+my_func(2)
+my_func(3)
+```
+---
+Будет ли работать эта программа? Если нет, то как ее исправить?
+```python
+def my_func():
+  a += 15
+  
+a = 5
+my_func()
+print(a)
+```
+---
