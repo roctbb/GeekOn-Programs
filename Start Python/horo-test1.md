@@ -44,6 +44,7 @@ if random.randint(1,100) > 30:
 else:
   print("кот в мешке")
 ```
+# .
 ---
 ```python
 def my_func(a):
