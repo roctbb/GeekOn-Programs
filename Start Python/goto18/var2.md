@@ -11,18 +11,15 @@ print((a + b) ** 3)
 ```
 ---
 ```python
-v = int(input())
-s = "Вася любит {0}"
-if v and not True:
-    print(s.format("кодить"))
-elif v or True:
-    print(s.format("спать"))
-else:
-    print(s.format("гулять"))
+a = [1, 2, 3]
+for i in a:
+    i += 2
+print(a)
+
 ```
 ---
 ```python
-for i in range(1,10,2):
+for i in range(15,5,-3):
     print("*" * i)
 ```
 ---
@@ -39,14 +36,14 @@ print(s)
 ```python
 animals = ['cow', 'camel', 'pig', 'frog', 'horse', 'goat']
 for animal in animals:
-    if len(animal) > 4:
-        print(animal[::-1])
+    if len(animal) > 3:
+        print(animal[::2])
 ```
 ---
 ```python
 sentence = "Мама мыла раму"
-sentence = sentence.lower().replace("м", "п")
-print(sentence[:4] + sentence[10:])
+sentence = sentence.upper().replace("а", "у")
+print(sentence[:2] + sentence[12:])
 ```
 ---
 ```python
@@ -57,7 +54,7 @@ for elem in list:
         d[elem] += 1
     else:
         d[elem] = 1
-print(d[3])
+print(d[2])
 ```
 ---
 ```python
@@ -68,7 +65,7 @@ matr = [
 ]
 p = 1
 for l in matr:
-    p *= sum(l)
+    p += sum(l) // 2
 print(p)
 ```
 
