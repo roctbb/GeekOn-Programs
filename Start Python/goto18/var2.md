@@ -46,6 +46,7 @@ sentence = sentence.upper().replace("а", "у")
 print(sentence[:2] + sentence[12:])
 ```
 ---
+### .
 ```python
 d = {}
 list = [1, 2, 3, 3, -45, 23, 6, 23, 3]
