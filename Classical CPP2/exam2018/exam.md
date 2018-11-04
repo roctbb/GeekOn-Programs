@@ -50,22 +50,6 @@ int main() {
    return 0;
 }
 ```
-
-```cpp
-#include <iostream>
-using namespace std;
-int func(int a)
-{
-   if (a%3==0)
-       return 1;
-   return a*func(a+2);
-}
-int main() {
-   cout<<func(2);
-   return 0;
-}
-```
-
 ```cpp
 #include <iostream>
 #include <cstring>
