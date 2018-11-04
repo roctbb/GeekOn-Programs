@@ -13,19 +13,6 @@ long long m[1024];
 
 ```cpp
 #include <iostream>
-using namespace std;
-int multiply(int a, int b)
-{
-   return a*b;
-}
-int main() {
-   cout<<multiply(multiply(5,4), 3);
-   return 0;
-}
-```
-
-```cpp
-#include <iostream>
 
 using namespace std;
 
@@ -47,7 +34,6 @@ int main() {
     return 0;
 }
 ```
-####
 
 ```cpp
 #include <iostream>
