@@ -68,28 +68,6 @@ int main()
 ### Задание 3
 **Теория:** Динамическая память и операции для работы с ней.
 
-```cpp
-#include <iostream>
-using namespace std;
-int main() {
-    int a = 3;
-    int b = 2;
-    int * c;
-    int * d;
-    c = &a;
-    d = &b;
-    cout<<*c**d;
-
-    int mas[10];
-
-    for (int i=0; i<10; i++)
-        mas[i] = i;
-    int * mas1 = mas+9;
-    for (int i=0; i<10; i++)
-       cout<<*(mas1-i);
-}
-```
-
 Сколько памяти будет утеряно?
 ```cpp
 #include <iostream>
