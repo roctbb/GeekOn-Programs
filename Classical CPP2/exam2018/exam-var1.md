@@ -1,6 +1,7 @@
 ## Промежуточный зачет по курсу "Объектно-ориентированное программирование на С++"
 
-#### 1. Сколько оперативной памяти занимают следующие структуры?
+### Задание 1
+**Теория:** Типы данных в С++.
 
 ```cpp
 int a;
@@ -9,65 +10,9 @@ unsigned short mas[2048];
 long long m[1024];
 ```
 
-#### 2. Что будет выведено на экран в следующих программах?
 
-```cpp
-#include <iostream>
-
-using namespace std;
-
-void f1(int a) {
-    a++;
-}
-
-void f2(int *mas) {
-    mas[0]++;
-}
-
-int main() {
-    int a = 1;
-    f1(a);
-    int mas[10];
-    mas[0] = 1;
-    f2(mas);
-    cout << a << mas[0];
-    return 0;
-}
-```
-
-```cpp
-#include <iostream>
-using namespace std;
-const int N=10;
-int func(int a) {
-   if (a%3==0)
-       return 1;
-   return a*func(a+2);
-}
-int main() {
-   cout<<func(2);
-   return 0;
-}
-```
-```cpp
-#include <iostream>
-#include <cstring>
-using namespace std;
-void step(char * str) {
-   for (int i=0; i<strlen(str); i++) {
-       str[i] = str[i]+1;
-   }
-}
-int main() {
-   char a[] = "abba";
-   step(a);
-   cout<<a;
-   return 0;
-}
-```
-
-#### 3. Теория и практика
-**Теория:** Класс. Свойства и методы. Конструктор и деструктор.
+### Задание 2
+**Теория:** Три принципа ООП.
 
 ```cpp
 #include <iostream>
@@ -75,36 +20,42 @@ int main() {
 
 using namespace std;
 
-class A {
-    int a;
+class Dog {
+protected:
+    int hunger;
 public:
-    A(int _a) {
-        a = _a;
-        cout<<"A";
+    Dog(int _hunger) {
+        hunger = _hunger;
     }
-    ~A() {
-        cout<<"B";
+    void voice() {
+        for (int i=0; i<hunger; i++)
+            cout<<"wow ";
     }
-    void func() {
-        cout<<a;
+
+};
+class Wolf:public Dog {
+public:
+    Wolf (int a) : Dog (a*2) {
+
+    }
+    void voice() {
+        cout<<"a";
+        for (int i=0; i<hunger; i++)
+            cout<<"u";
     }
 };
 
 int main()
 {
-    A a(1);
-    cout<<"C";
-    for (int i=0;i<2;i++) {
-        A b(2);
-        b.func();
-        a.func();
-    }
-    cout<<"C";
+    Dog A(2);
+    Wolf B(4);
+    A.voice();
+    B.voice();
     return 0;
 }
 ```
-
-**Теория:** Динамическая память и операции для работы с ней?
+### Задание 3
+**Теория:** Три типа памяти. Указатель и операции с указателями.
 
 ```cpp
 #include <iostream>
@@ -127,21 +78,13 @@ int main() {
        cout<<*(mas1-i);
 }
 ```
-Сколько памяти будет утеряно?
-```cpp
-#include <iostream>
-using namespace std;
-int main() {
-    for (int i=0; i<1024*1024*1024; i++)
-        char * a = new char;
-}
-```
-#### 4. Практика
 
-Реализуйте структуру данных стэк, которая поддерживает три операции:
- - push - добавление элемента на вершину стэка
- - pop - возвращает верхний элемент и удаляет его
- - empty - возвращает true, если стэк пуст
+### Задание 4
 
+Реализуйте структуру данных очередь, которая поддерживает три операции:
+ - push - добавление элемента в конец очереди
+ - pop - возвращает первый элемент в очереди и удаляет его
+ - empty - возвращает true, если очередь пуста
+ 
 Используйте шаблоны.
 
