@@ -65,9 +65,3 @@ my_func()
 print(a)
 ```
 ---
-```python
-sentence = "Мама мыла раму"
-sentence = sentence.lower().replace("м", "п")
-print(sentence[:4] + sentence[10:])
-```
----
