@@ -35,4 +35,17 @@ else:
     print(A * 3)
 ```
 
+**Задание 3: еще условия**
 
+```python
+weather = 21
+rain = "yes"
+
+if weather > 25:
+    print("го в футбол")
+else:
+    if weather > 20 and rain == "no":
+        print("го гулять!")
+    else:
+        print("го в фортнайт!")
+```
