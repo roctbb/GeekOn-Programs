@@ -49,7 +49,6 @@ else:
 ```
 
 ---
-
 С какой вероятность программа выведет слово *джекпот*?:
 ```python
 import random
@@ -58,7 +57,6 @@ if random.randint(1,100) > 30:
 else:
   print("кот в мешке")
 ```
-# .
 ---
 
 ```python
@@ -69,7 +67,6 @@ my_func(1)
 my_func(2)
 my_func(3)
 ```
-
 ---
 
 Будет ли работать эта программа? Если нет, то как ее исправить?
@@ -116,8 +113,6 @@ for animal in animals:
     if len(animal) > 4:
         print(animal[::-1])
 ```
-####
-
 ---
 ```python
 sentence = "Мама мыла раму"
