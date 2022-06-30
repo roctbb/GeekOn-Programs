@@ -138,6 +138,7 @@ l = [a, a, a, a]
 l2 = l
 l2[0] = 6
 print(l)
+print(l2)
 ```
 ---
 ```python
