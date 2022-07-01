@@ -60,14 +60,16 @@ else
 ---
 
 ```pascal
-v = int(input())
-s = "Вася любит {0}"
-if v and not True:
-    print(s.format("кодить"))
-elif v or True:
-    print(s.format("спать"))
-else:
-    print(s.format("гулять"))
+readln(v);
+s := 'Вася любит';
+
+if (v and !1) then
+    writeln('Vasya likes coding');
+else 
+ if (v || 1) then
+    writeln('Vasya likes to sleep');
+else 
+    writeln('Vasya likes to walk');
 ```
 ---
 ```pascal
